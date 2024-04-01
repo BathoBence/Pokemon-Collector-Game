@@ -1,0 +1,91 @@
+.encounterPage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+    background-image: url("https://i.pinimg.com/originals/30/06/ec/3006ec2752eaf2418e9f7c89e41f0fa9.jpg");
+  }
+
+  .enemyBattleground{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .playerBattleground{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .pokemonSelect{
+    margin-left: 1rem;
+  }
+
+  .ownDeck{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-area: ownDeck;
+    border: 2px solid white;
+    background-color: rgba(50, 50, 50, 0.9);
+    color:white;
+    border-radius: 0.5rem;
+    height: 380px;
+  }
+
+  .pokes{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .pokemonsDisplay{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .enemyBattleground{
+    padding: 15px;
+    border: 2px solid white;
+    background-color: rgba(50, 50, 50, 0.9);
+    color:white;
+    border-radius: 5px;
+    flex-grow: 2;
+  }
+  
+  .playerBattleground{
+    padding: 15px;
+    border: 2px solid white;
+    background-color: rgba(50, 50, 50, 0.9);
+    color:white;
+    border-radius: 5px;
+    flex-grow: 2;
+  }
+  
+  .attackButton{
+    padding: 30px;
+    border: 2px solid white;
+    background-color: rgba(50, 50, 50, 0.9);
+    color:white;
+    border-radius: 10px;
+    font-family: 'Press Start 2P';
+    font-size: small;
+    align-items: center;
+    flex-grow: 1;
+  
+  }
+  
+  .attackButton:hover {
+    background-color: red;
+    font-size: xx-large;
+    text-decoration: underline;
+  }
+  
+  .attackButton:active {
+    font-style: oblique;
+  }

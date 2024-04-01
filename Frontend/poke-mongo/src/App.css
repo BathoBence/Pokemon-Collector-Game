@@ -1,0 +1,297 @@
+@import '~typeface-press-start-2p';
+
+
+
+.App{
+  font-family: 'Press Start 2P';
+  display: flex;
+  flex-direction: row;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/850/680/974/pokemon-water-play-waterfall-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* -------NAVBAR-------------NAVBAR-------------NAVBAR-------------NAVBAR-------------NAVBAR-------------NAVBAR------ */
+
+.navBar {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Press Start 2P';
+  max-width: 153px;
+}
+
+
+.navStats {
+  padding: 10px;
+  border: 3px solid black;
+  background-color: white;
+  border-radius: 10px;
+  font-family: 'Press Start 2P';
+}
+
+.navButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+  border-bottom-right-radius: 10px;
+  font-family: 'Press Start 2P';
+  
+}
+.navButton{
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  font-family: 'Press Start 2P';
+  flex-grow: 5;
+  border: 3px solid black;
+}
+.navButton:hover{
+  text-decoration: underline;
+  border: 5px solid green;
+  color: green;
+}
+.navName {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Press Start 2P';
+  padding: 10px;
+  align-items: center;
+}
+
+.navGold{
+  padding: 10px;
+  font-family: 'Press Start 2P';
+  align-items: center;
+  color: goldenrod;
+}
+
+
+/* -------HOME-------------HOME-------------HOME-------------HOME-------------HOME-------------HOME------ */
+
+.screen {
+  flex-grow: 1;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: calc(100vh - 10px); 
+  overflow-y: auto;
+}
+
+.selectText{
+  color: white;
+  font-size: 50px;
+  margin: 3rem;
+  height: fit-content;
+  background-color: rgba(50, 50, 50, 0.9);
+  padding: 50px;
+  border: 5px solid white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.homePageContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+.locationsContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.locationCard{
+  background-color: rgba(50, 50, 50, 0.9);
+  color:white;
+  font-size: 30px;
+  margin: 10px;
+  border: 5px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Press Start 2P';
+  font-size: small;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  align-items: center;
+}
+
+
+.locationCard:hover{
+  transform: scale(1.2);
+  border: 2px solid red;
+  color: red;
+  font-size: small;
+}
+
+/* -------POKECARD-------------POKECARD-------------POKECARD-------------POKECARD-------------POKECARD-------------POKECARD------ */
+
+.pokemonCard{
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: 'Press Start 2P';
+  width: 240px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+
+.cardImage{
+  background-color: white;
+  margin: 17px;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid black;
+}
+
+.cardButton{
+  width: 100%;
+  height: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: 'Press Start 2P';
+  border: 2px solid black;
+  flex-grow: 1;
+  
+}
+
+.cardButton:hover{
+  text-decoration: underline;
+}
+
+.stats{
+background-color: white;
+padding: 5px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+
+}
+/*--------UnknownCard--------UnknownCard--------UnknownCard--------UnknownCard--------UnknownCard--------UnknownCard*/
+
+.Unknown{
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: 'Press Start 2P';
+  width: 240px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+
+.UnknownCardImage{
+  background-color: white;
+  margin: 17px;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid black;
+}
+
+/* -------SHOP-------------SHOP-------------SHOP-------------SHOP-------------SHOP-------------SHOP------ */
+.mainShopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Pack {
+  max-width: 40%;
+  max-height: auto;
+  border: 5px solid #15963e;
+  right:0;
+  margin-bottom: 20px;
+}
+
+.packImage {
+  display: flex;
+  height: 420px;
+  width: 300px;
+  border-radius: 15px;
+  justify-content: center;
+  background-image: url(Components/CardBack.jpg);
+}
+
+.openerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.packBuy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pack {
+  display: flex;
+  justify-content: center;
+}
+
+.Buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px;
+  flex: 1;
+  border-radius: 5px;
+  font-family: 'Press Start 2P';
+}
+
+.Buy:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px;
+  flex: 1;
+  border-radius: 5px;
+  font-family: 'Press Start 2P';
+  color: gold;
+  text-decoration: underline;
+  background-color: black;
+}
+
+
+
+/* -------INVENTORY-------------INVENTORY------------INVENTORY-------------INVENTORY-------------INVENTORY-------------INVENTORY------ */
+.inventory {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+/* -------POKEDEX-------------POKEDEX-------------POKEDEX-------------POKEDEX-------------POKEDEX-------------POKEDEX------ */
+
+/* -------Login-------Login-------Login-------Login-------Login-------Login-------Login-------Login-------Login-------Login-------Login */
+.welcomeDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+}
+
+.welcomeContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  right:0%
+}

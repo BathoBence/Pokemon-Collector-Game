@@ -1,0 +1,399 @@
+[
+    {
+        "name": "Canalave City",
+        "subLocations": [{
+            "name": "Canalave City Arena",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Eterna City",
+        "subLocations": [
+            {
+                "name": "Eterna City Arena",
+                "cleared": false
+            },
+            {
+                "name": "Eterna City West Gate",
+                "cleared": false
+            }
+        ],
+        "cleared": false
+    },
+    {
+        "name": "Pastoria City",
+        "subLocations": [{
+            "name": "Pastoria City Arena",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Sunyshore City",
+        "subLocations": [{
+            "name": "Sunyshore City Arena",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Sinnoh Pokemon League",
+        "subLocations": [{
+            "name": "Sinnoh Pokemon League Arena",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Oreburgh Mine",
+        "subLocations": [
+        {
+            "name": "Orebrugh Mine 1st floor",
+            "cleared": false
+        },
+        {
+            "name": "Orebrugh Mine 2nd floor",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Valley Windworks",
+        "subLocations": [{
+            "name": "Valley Windworks Arena",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Eterna Forest",
+        "subLocations": [{
+            "name": "Eterna Forest Arena",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Feugo IronWorks",
+        "subLocations": [{
+            "name": "Feugo IronWorks Arena",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Mt Coronet",
+        "subLocations": [
+        {
+            "name": "Mt Coronet 1st floor route 207",
+            "cleared": false
+        },
+        {
+            "name": "Mt Coronet 2nd floor",
+            "cleared": false
+        },
+        {
+            "name": "Mt Coronet 3rd floor",
+            "cleared": false
+        },
+        {
+            "name": "Mt Coronet Exterior Snowfall",
+            "cleared": false
+        },
+        {
+            "name": "Mt Coronet Exterior Blizzard",
+            "cleared": false
+        },
+        {
+            "name": "Mt Coronet 4th floor",
+            "cleared": false
+        },
+        {
+            "name": "Mt Coronet 4th floor small room",
+            "cleared": false
+        },
+        {
+            "name": "Mt Coronet 5th floor",
+            "cleared": false
+        },
+        {
+            "name": "Mt Coronet 6th floor",
+            "cleared": false
+        },
+        {
+            "name": "Mt Coronet 1st floor from Exterior",
+            "cleared": false
+        },
+        {
+            "name": "Mt Coronet 1st floor route 216",
+            "cleared": false
+        },
+        {
+            "name": "Mt Coronet 1st floor route 211",
+            "cleared": false
+        },
+        {
+            "name": "Mt Coronet B 1st floor",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Great Marsh",
+        "subLocations": [
+        {
+            "name": "Great Marsh Arena 1",
+            "cleared": false
+        },
+        {
+            "name": "Great Marsh Arena 2",
+            "cleared": false
+        },
+        {
+            "name": "Great Marsh Arena 3",
+            "cleared": false
+        },
+        {
+            "name": "Great Marsh Arena 4",
+            "cleared": false
+        },
+        {
+            "name": "Great Marsh Arena 5",
+            "cleared": false
+        },
+        {
+            "name": "Great Marsh Arena 6",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Solaceon Ruins",
+        "subLocations": [
+        {
+            "name": "Solaceon Ruins 2nd floor",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins 1st floor",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 1st floor a",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 1st floor b",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 1st floor c",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 2nd floor a",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 2nd floor b",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 2nd floor c",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 3rd floor a",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 3rd floor b",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 3rd floor c",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 3rd floor d",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 3rd floor e",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 4th floor a",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 4th floor b",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 4th floor c",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 4th floor d",
+            "cleared": false
+        },
+        {
+            "name": "Solaceon Ruins B 5th floor",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Sinnoh Vitory Road",
+        "subLocations": [
+        {
+            "name": "Sinnoh Vitory Road 1st floor",
+            "cleared": false
+        },
+        {
+            "name": "Sinnoh Vitory Road 2nd floor",
+            "cleared": false
+        },
+        {
+            "name": "Sinnoh Vitory Road B 1st floor",
+            "cleared": false
+        },
+        {
+            "name": "Sinnoh Vitory Road Inside B 1st floor",
+            "cleared": false
+        },
+        {
+            "name": "Sinnoh Vitory Road Inside",
+            "cleared": false
+        },
+        {
+            "name": "Sinnoh Vitory Road Inside Exit",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Ravaged Path",
+        "subLocations": [{
+            "name": "Ravaged Path Arena",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Oreburgh Gate",
+        "subLocations": [
+        {
+            "name": "Oreburgh Gate 1st floor",
+            "cleared": false
+        },
+        {
+            "name": "Oreburgh Gate B 1st floor",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Stark Mountain",
+        "subLocations": [
+            {
+            "name": "Stark Mountain Arena",
+            "cleared": false
+        },
+        {
+            "name": "Stark Mountain Entrance",
+            "cleared": false
+        },
+        {
+            "name": "Stark Mountain Inside",
+            "cleared": false
+        },
+        {
+            "name": "Stark Mountain Heatran Chamber",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Spring Path",
+        "subLocations": [],
+        "cleared": false
+    },
+    {
+        "name": "Turnback Cave",
+        "subLocations": [
+        {
+            "name": "Turnback Cave before 1st pillar",
+            "cleared": false
+        },
+        {
+            "name": "Turnback Cave 1st pillar",
+            "cleared": false
+        },
+        {
+            "name": "Turnback Cave between 1st and 2nd pillar",
+            "cleared": false
+        },
+        {
+            "name": "Turnback Cave 2nd pillar",
+            "cleared": false
+        },
+        {
+            "name": "Turnback Cave between 2nd and 3rd pillar",
+            "cleared": false
+        },
+        {
+            "name": "Turnback Cave 3rd pillar",
+            "cleared": false
+        },
+        {
+            "name": "Turnback Cave after 3rd pillar",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Snowpoint Temple",
+        "subLocations": [
+        {
+            "name": "Snowpoint Temple 1st floor",
+            "cleared": false
+        },
+        {
+            "name": "Snowpoint Temple B 1st floor",
+            "cleared": false
+        },
+        {
+            "name": "Snowpoint Temple B 2nd floor",
+            "cleared": false
+        },
+        {
+            "name": "Snowpoint Temple B 3rd floor",
+            "cleared": false
+        },
+        {
+            "name": "Snowpoint Temple B 4th floor",
+            "cleared": false
+        },
+        {
+            "name": "Snowpoint Temple B 5th floor",
+            "cleared": false
+        }],
+        "cleared": false
+    },
+    {
+        "name": "Wayward Cave",
+        "subLocations": [
+        {
+            "name": "Wayward Cave 1st floor",
+            "cleared": false
+        },
+        {
+            "name": "Wayward Cave B 1st floor",
+            "cleared": false
+        }],
+        "cleared": false
+    }
+]

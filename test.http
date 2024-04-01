@@ -1,0 +1,44 @@
+get http://127.0.0.1:8080/api/users
+###
+get http://127.0.0.1:8080/api/progress/651db94941328cf83807a9ad
+###
+PATCH http://127.0.0.1:8080/api/pokemon/64db6563e281b936060a999f
+###
+POST http://127.0.0.1:8080/api/player/snorlax
+
+###
+PATCH http://127.0.0.1:8080/api/seenPokemon/snorlax
+
+###
+PATCH http://127.0.0.1:8080/api/levelup/650c77ec3afba8c8a6277c0e
+
+###
+PATCH http://127.0.0.1:8080/api/player/pokemons
+Content-Type: application/json
+
+{
+    "name": "Absol",
+    "id": 77,
+    "hp": 100,
+    "atk": 25,
+    "def": 30,
+    "speed": 20,
+    "type": ["Dark"],
+    "tamed": true,
+    "lvl": 99,
+    "img": ["String"],
+    "seen": true,
+    "price": 1,
+    "equiped": true
+}
+###
+
+PATCH  http://127.0.0.1:8080/api/pokemon/9
+
+
+
+
+                atk:1,
+                hp:1,
+                def:1,
+                speed:1
