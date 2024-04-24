@@ -36,8 +36,6 @@ const updateSeenPokemons = (pokemon) => {
 const EvolveCenter = ({onEvolve}) => {
 
     const [playerPokemons, setPlayerPokemons] = useState([])
-    const [numberOfPokemons, setNumberOfPokemons] = useState(151)
-    const [evolvedPokemon, setEvolvedPokemon] = useState()
 
 useEffect(()=>{
     fetchEvolveablePokemons()
@@ -58,7 +56,7 @@ useEffect(()=>{
     return (
 
         <>
-            {playerPokemons.map((pokemon, index) => {
+            {playerPokemons.map((pokemon) => {
                 return (!pokemon.message ? <div key={pokemon._id}>
                     <PokeCard pokemon={pokemon} page={"Evolve"} />
                     <button onClick={(e) => handleClick(e, pokemon)}>Evolve</button>
