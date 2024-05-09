@@ -12,4 +12,13 @@ code {
     monospace;
 }
 
+.body_container{
+  font-family: 'Press Start 2P';
+  display: flex;
+  flex-direction: row;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/850/680/974/pokemon-water-play-waterfall-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 

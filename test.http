@@ -1,5 +1,7 @@
 get http://127.0.0.1:8080/api/users
 ###
+POST http://127.0.0.1:8080/api/login
+###
 get http://127.0.0.1:8080/api/progress/651db94941328cf83807a9ad
 ###
 PATCH http://127.0.0.1:8080/api/pokemon/64db6563e281b936060a999f

@@ -8,8 +8,6 @@ In the game, your goal is simple... Catch them all!
 
 ## About the Project
 
-**About the Project**
-
 Welcome to PokeMongo, the ultimate Pokémon collector experience where every trainer's journey begins!
 
 In this thrilling adventure, players embark on a quest to catch 'em all, journeying through vast landscapes teeming with wild Pokémon awaiting discovery. But the excitement doesn't end there! With every step taken and every challenge overcome, trainers have the chance to earn valuable cardpacks filled with mysterious Pokémon waiting to be unleashed.

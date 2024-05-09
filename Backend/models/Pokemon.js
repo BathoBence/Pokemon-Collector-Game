@@ -10,11 +10,12 @@ const pokemonSchema = new Schema({
     speed: Number,
     type: [String],
     img: [String],
-    form: {
-        type: String,
-        default: "base"
+    seen: {
+        type:Boolean,
+        default: false
     },
-    evolveInto: String
+    form: String,
+    evolveInto: [String]
 });
 
 const Pokemon = model('Pokemon', pokemonSchema);

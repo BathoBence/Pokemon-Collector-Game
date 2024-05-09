@@ -1,9 +1,6 @@
 import './App.css';
 import NavBar from './Components/NavBar.js'
 import { useState } from 'react';
-import EncounterPage from './Components/Pages/EncounterPage.js'
-import BattlePage from './Components/Pages/BattlePage.js'
-import WelcomingPage from './Components/Pages/WelcomingPage'
 
 function App() {
   const [page, setPage] = useState('welcome')

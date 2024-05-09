@@ -1,14 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const authRoutes = require('./routes/authRoutes');
+const cookieParser = require('cookie-parser');
 require("dotenv").config();
-const PokemonModel = require('./modul/allPokemons')
-const InventoryModel = require('./modul/Inventories')
-const PokedexPokemonModel = require('./modul/pokedexPokemons')
-const CaughtPokemonModel = require('./modul/caughtPokemons')
-
-const PlayerModel = require('./modul/finalPlayerModel')
-const PokedexModel = require('./modul/finalPokedexModel')
-const cors=require ('cors')
+const PokemonModel = require('./models/Pokemon');
+const CaughtPokemonModel = require('./models/UsersPokemon');
+const PlayerModel = require('./models/User');
 
 const { MONGO_URL, PORT = 8080 } = process.env;
 
@@ -19,8 +16,34 @@ if (!MONGO_URL) {
 
 const app = express();
 app.use(express.json());
-//app.use(cors())
+app.use("/api",authRoutes);
+app.use(cookieParser());
 
+app.get('/set-cookies',(req,res) => {
+res.cookie('name', false);
+res.send("Check the cookies!");
+
+});
+
+app.get('/read-cookies', (req, res) => {
+
+
+
+})
+
+const main = async () => {
+    await mongoose.connect(MONGO_URL);
+    app.listen(PORT, () => {
+        console.log(`App is listening on ${PORT}`);
+        console.log("Try /api/pokemons route right now");
+    });
+};
+
+main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+});
+/* 
 //Get all users
 
 app.get("/api/users", async (req,res,next)=>{
@@ -167,7 +190,7 @@ app.get(`/api/pokemon/enemy/:name`, async (req, res, next) => {
     } catch (err) {
         return next(err);
     }
-})
+});
 
 app.patch(`/api/pokemonSeen/:name`, async (req, res, next) => {
     const name = req.params.name;
@@ -178,7 +201,7 @@ app.patch(`/api/pokemonSeen/:name`, async (req, res, next) => {
     } catch (err) {
         return next(err);
     }
-})
+});
 
 //Add pokemon to the inventory
 app.post('/api/player/:name', async (req, res, next) => {
@@ -204,7 +227,7 @@ app.post('/api/player/:name', async (req, res, next) => {
       } catch (err) {
         return next(err);
       }
-})
+});
 
 
 app.patch('/api/player/money/minus', async (req, res, next) => {
@@ -216,7 +239,7 @@ app.patch('/api/player/money/minus', async (req, res, next) => {
       } catch (err) {
         return next(err);
       }
-})
+});
 
 //Sell Pokemon
 app.delete("/api/inventory/:id", async (req, res, next) => {
@@ -231,7 +254,7 @@ app.delete("/api/inventory/:id", async (req, res, next) => {
     } catch(err) {
         return next(err);
     }
-})
+});
 
 //Remove preEvolved Pokemon
 app.delete("/api/remove/:id", async (req, res, next) => {
@@ -244,7 +267,7 @@ app.delete("/api/remove/:id", async (req, res, next) => {
     } catch(err) {
         return next(err);
     }
-})
+});
 
 //Get all evolveable pokemon
 app.get("/api/evolve", async(req,res,next)=>{
@@ -254,7 +277,7 @@ app.get("/api/evolve", async(req,res,next)=>{
     } catch(err) {
         next(err)
     }
-})
+});
 
 //LevelUp a Pokemon
 app.patch("/api/levelup/:id", async (req,res,next)=>{
@@ -275,7 +298,7 @@ app.patch("/api/levelup/:id", async (req,res,next)=>{
     } catch (err) {
         next(err)
     }
-})
+});
 
 app.patch("/api/player/:id", async (req,res,next) =>{
     try {
@@ -288,7 +311,7 @@ app.patch("/api/player/:id", async (req,res,next) =>{
     } catch (err) {
         next(err)
     }
-})
+});
 
 
 //update pokemon
@@ -303,29 +326,16 @@ app.patch("/api/pokemon/:id", async (req, res, next) =>{
     } catch (err) {
         return next(err);
     }
-})
-
-const main = async () => {
-    await mongoose.connect(MONGO_URL);
-    app.listen(PORT, () => {
-        console.log(`App is listening on ${PORT}`);
-        console.log("Try /api/pokemons route right now");
-    })
-}
-
-main().catch((err) => {
-    console.error(err);
-    process.exit(1);
 });
 
 app.get('/api/player', (req,res)=>{
     res.send(player)
-})
+});
 
 app.patch('/api/player', (req,res)=>{
     const money = req.body.money
     player.gold -= Number(money)
     res.status(200)
-})
+});
 
-
+*/

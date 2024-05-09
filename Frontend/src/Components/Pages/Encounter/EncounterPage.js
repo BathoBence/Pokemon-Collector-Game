@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import PokeCard from '../PokeCard'
+import PokeCard from '../../PokeCard'
 import "./EncounterPage.css"
 
 const getPokemon = async (id) => {
