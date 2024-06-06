@@ -5,6 +5,10 @@ This is a learning project. It's goal was to create our first MERN fullstack app
 
 In the game, your goal is simple... Catch them all!
 
+![Alt text](./README_Images/Képernyőkép%202024-06-06%20115801.png?raw=true "Optional Title")
+
+![Alt text](./README_Images/Képernyőkép%202024-06-06%20120657.png?raw=true "Optional Title")
+
 
 ## About the Project
 
@@ -54,7 +58,8 @@ Dive into the world of Pokémon like never before and experience the thrill of b
 
 * <a href="https://www.javascript.com/" target="blank"><img src="https://github.com/get-icon/geticon/blob/master/icons/javascript.svg" height="25" /> JavaScript </a>
 
-**Server:** Node, Express
+**Server:**
+* <a href="https://expressjs.com/" target="blank"><img src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png" height="25" /> Express </a>
 
 * <a href="https://www.javascript.com/" target="blank"><img src="https://github.com/get-icon/geticon/blob/master/icons/javascript.svg" height="25" /> JavaScript </a>
 

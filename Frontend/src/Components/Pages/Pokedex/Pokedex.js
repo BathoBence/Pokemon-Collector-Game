@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PokeCard from "../../Elements/PokeCard";
 import UnknownCard from "../../Elements/UnknownCard";
-import './Pokedex'
+import './Pokedex.css'
 
 const fetchPokedex = (id) => {
   return fetch(`/info/pokedex/${id}`).then((res) => res.json())
