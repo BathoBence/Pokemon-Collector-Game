@@ -1,0 +1,55 @@
+/* -------NAVBAR-------------NAVBAR-------------NAVBAR-------------NAVBAR-------------NAVBAR-------------NAVBAR------ */
+
+.navBar {
+    min-height: 100vh;
+    min-width: 9vw;
+    position: fixed;
+  }
+  
+  
+  .navStats {
+    padding: 10px;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Press Start 2P';
+  }
+  
+  .navButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+    border-bottom-right-radius: 10px;
+    font-family: 'Press Start 2P';
+    
+  }
+  .navButton{
+    color: white;
+    padding: 10px;
+    background-color: rgb(25, 33, 26);
+    border-radius: 10px;
+    font-family: 'Press Start 2P';
+    flex-grow: 5;
+    border: 3px solid rgb(127, 125, 125);
+  }
+  .navButton:hover{
+    text-decoration: underline;
+    border: 5px solid green;
+    color: green;
+  }
+  .navName {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Press Start 2P';
+    padding: 10px;
+    align-items: center;
+  }
+  
+  .navGold{
+    padding: 10px;
+    font-family: 'Press Start 2P';
+    align-items: center;
+    color: goldenrod;
+  }
+  

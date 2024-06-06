@@ -2,7 +2,7 @@
 
 
 
-.App{
+.App {
   font-family: 'Press Start 2P';
   display: flex;
   flex-direction: row;
@@ -37,9 +37,10 @@
   flex: 1;
   border-bottom-right-radius: 10px;
   font-family: 'Press Start 2P';
-  
+
 }
-.navButton{
+
+.navButton {
   color: white;
   padding: 10px;
   background-color: rgb(25, 33, 26);
@@ -48,11 +49,13 @@
   flex-grow: 5;
   border: 3px solid rgb(127, 125, 125);
 }
-.navButton:hover{
+
+.navButton:hover {
   text-decoration: underline;
   border: 5px solid green;
   color: green;
 }
+
 .navName {
   font-size: 18px;
   font-weight: bold;
@@ -61,7 +64,7 @@
   align-items: center;
 }
 
-.navGold{
+.navGold {
   padding: 10px;
   font-family: 'Press Start 2P';
   align-items: center;
@@ -71,16 +74,44 @@
 
 /* -------HOME-------------HOME-------------HOME-------------HOME-------------HOME-------------HOME------ */
 
+.loadingDiv {
+  display: block;
+  text-align: center;
+  left: 30vw;
+  height: 20vh;
+  width: 20vw;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+.loadingLabel {
+  top:0%;
+  display: block;
+  text-align: center;
+  line-height: 150%;
+  font-family: 'Press Start 2P';
+  margin-bottom: 1%;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  justify-content: center;
+}
+
 .screen {
   flex-grow: 1;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  max-height: calc(100vh - 10px); 
+  max-height: calc(100vh - 10px);
   overflow-y: auto;
 }
 
-.selectText{
+.selectText {
   color: white;
   font-size: 50px;
   margin: 3rem;
@@ -92,22 +123,29 @@
   border-radius: 10px;
 }
 
-.homePageContainer{
+.homePageContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 75%;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./Images/background_img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
 }
-.locationsContainer{
+
+.locationsContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.locationCard{
+
+.locationCard {
   background-color: rgba(50, 50, 50, 0.9);
-  color:white;
+  color: white;
   font-size: 30px;
   margin: 10px;
   border: 5px solid white;
@@ -122,7 +160,7 @@
 }
 
 
-.locationCard:hover{
+.locationCard:hover {
   transform: scale(1.2);
   border: 2px solid red;
   color: red;
@@ -131,7 +169,7 @@
 
 /* -------POKECARD-------------POKECARD-------------POKECARD-------------POKECARD-------------POKECARD-------------POKECARD------ */
 
-.pokemonCard{
+.pokemonCard {
   border: 2px solid black;
   border-radius: 10px;
   font-family: 'Press Start 2P';
@@ -139,20 +177,26 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   opacity: 1;
+  margin-bottom: 2vh;
 }
 
-.cardImage{
-  background-color: rgb(97, 97, 97);
-  margin: 17px;
+.cardImage {
+  margin-top: 3vh;
   width: 200px;
   height: 200px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border: 2px solid black;
+  background-image: url('./Images/pokemon-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.cardButton{
+.cardButton {
   width: 100%;
   height: 30px;
   border-bottom-left-radius: 10px;
@@ -160,23 +204,24 @@
   font-family: 'Press Start 2P';
   border: 2px solid black;
   flex-grow: 1;
-  
+
 }
 
-.cardButton:hover{
+.cardButton:hover {
   text-decoration: underline;
 }
 
-.stats{
-background-color: rgb(154, 125, 125);
-padding: 5px;
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
+.stats {
+  background-color: rgb(154, 125, 125);
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
 }
+
 /*--------UnknownCard--------UnknownCard--------UnknownCard--------UnknownCard--------UnknownCard--------UnknownCard*/
 
-.Unknown{
+.Unknown {
   border: 2px solid black;
   border-radius: 10px;
   font-family: 'Press Start 2P';
@@ -185,9 +230,10 @@ border-bottom-right-radius: 10px;
   display: flex;
   flex-direction: column;
   opacity: 1;
+  margin-bottom: 2vh;
 }
 
-.UnknownCardImage{
+.UnknownCardImage {
   margin: 17px;
   width: 200px;
   height: 200px;
@@ -213,7 +259,7 @@ border-bottom-right-radius: 10px;
   max-width: 40%;
   max-height: auto;
   border: 5px solid #15963e;
-  right:0;
+  right: 0;
   margin-bottom: 20px;
 }
 
@@ -223,7 +269,7 @@ border-bottom-right-radius: 10px;
   width: 300px;
   border-radius: 15px;
   justify-content: center;
-  background-image: url(Components/CardBack.jpg);
+  background-image: url(Images/CardBack.jpg);
 }
 
 .openerContainer {
@@ -232,10 +278,10 @@ border-bottom-right-radius: 10px;
 }
 
 .packBuy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .pack {
@@ -277,6 +323,7 @@ border-bottom-right-radius: 10px;
   align-items: center;
   width: 75%;
 }
+
 /* -------POKEDEX-------------POKEDEX-------------POKEDEX-------------POKEDEX-------------POKEDEX-------------POKEDEX------ */
 
 /* -------Login-------Login-------Login-------Login-------Login-------Login-------Login-------Login-------Login-------Login-------Login */
@@ -293,5 +340,5 @@ border-bottom-right-radius: 10px;
   display: flex;
   flex-direction: column;
   width: 50vw;
-  right:0%
+  right: 0%
 }

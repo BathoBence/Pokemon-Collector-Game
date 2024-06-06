@@ -10,10 +10,11 @@ const pokedexPokemonSchema = new Schema({
         default: false
     },
     form: String,
-    evolveInto: [String]
+    evolveInto: [String],
+    trainerId: {type: mongoose.Schema.Types.ObjectId, default: null}
 });
 
-const PokedexPokemon = model('Pokemon', pokedexPokemonSchema);
+const PokedexPokemon = model('PokedexPokemon', pokedexPokemonSchema);
 
 
 module.exports = PokedexPokemon;

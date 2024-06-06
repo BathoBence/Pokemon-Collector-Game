@@ -1,0 +1,7 @@
+.pokedex {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-height: 90vh;
+}

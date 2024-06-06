@@ -1,14 +1,10 @@
+import React from "react";
 import { useState, useEffect } from 'react'
-import PokeCard from './PokeCard'
+import PokeCard from '../../Elements/PokeCard'
+import { useParams } from 'react-router-dom'
 
-const getPokemon = async (id) => {
-    const promise = await fetch(`/api/pokemon/${id}`)
-    const data = await promise.json()
-    return data
-}
-
-const sellPokemon = (id) => {
-    return fetch(`/api/inventory/${id}`, { 
+const sellPokemon = (pokemonId) => {
+    return fetch(`/user/sell_pokemon/${pokemonId}`, { 
         method: "DELETE",
         headers: {
             "Content-Type": "application/json"
@@ -18,26 +14,24 @@ const sellPokemon = (id) => {
     );
   };
 
-export default function Inventory({onSell}) {
-    const [playerPokemons, setPlayerPokemons] = useState([])
-    const [numberOfPokemons, setNumberOfPokemons] = useState(151)
+const Inventory = ({onSell}) => {
+    const [playerPokemons, setPlayerPokemons] = useState([]);
+    const [numberOfPokemons, setNumberOfPokemons] = useState(151);
+    const {userId} = useParams();
 
     useEffect(() => {
         const fetchInventory = async () => {
-            const response = await fetch("/api/player/Viki");
+            const response = await fetch(`/info/inventory/${userId}`);
             const data = await response.json();
-            const urls = data.myPokemons.map((pokemon)=>(pokemon))
-            Promise.all([...urls].map(x => getPokemon(x))).then(x => setPlayerPokemons(x))
+            setPlayerPokemons(data);
         }
         fetchInventory()
 
     }, [numberOfPokemons])
 
-    const handleClick = (event,pokemonId) => {
+    const handleClick = async (event,pokemonId) => {
         event.preventDefault()
-        sellPokemon(pokemonId).then((money)=>{
-            onSell(Number(money))
-        })
+        await sellPokemon(pokemonId)
         setNumberOfPokemons(numberOfPokemons-1)
     }
 
@@ -54,3 +48,5 @@ export default function Inventory({onSell}) {
         </>
     )
 }
+
+export default Inventory;

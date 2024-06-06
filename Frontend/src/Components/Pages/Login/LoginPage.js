@@ -1,12 +1,13 @@
+import React from "react";
 import { useState } from 'react';
 import Cookies from "js-cookie";
 
-import './LoginPage.css'
+import './LoginPage.css';
 import LoginForm from '../../Forms/LoginForm';
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from "react-router-dom"; 
 
 const LoginPage = () => {
-    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const navigate = useNavigate();
@@ -15,35 +16,34 @@ const LoginPage = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('/api/user/login', {
+            const loginResponse = await fetch('/api/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    name: username,
+                    email,
                     password,
                 }),
             });
 
-            if (response.ok) {
-                const result = await response.json();
+            if (loginResponse.ok) {
+                const result = await loginResponse.json();
                 const token = result.jwt;
                 Cookies.set('accessToken', token, { secure: true });
-                navigate("/");
+                navigate(`/main/${result.user}`);
             }
 
         } catch (error) {
             console.error(error); // Handle fetch error
         }
     }
-
     return <LoginForm
-        username={username}
-        setUsername={setUsername}
-        password={password}
-        setPassword={setPassword}
-        onLogin={handleLogin} />
+            email={email}
+            setEmail={setEmail}
+            password={password}
+            setPassword={setPassword}
+            onLogin={handleLogin} />;
 }
 
 export default LoginPage;

@@ -1,11 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/authRoutes');
+const pokemonRoutes = require('./routes/pokemonRoutes');
+const userRoutes = require('./routes/userRoutes');
 const cookieParser = require('cookie-parser');
 require("dotenv").config();
-const PokemonModel = require('./models/Pokemon');
-const CaughtPokemonModel = require('./models/UsersPokemon');
-const PlayerModel = require('./models/User');
 
 const { MONGO_URL, PORT = 8080 } = process.env;
 
@@ -16,13 +15,14 @@ if (!MONGO_URL) {
 
 const app = express();
 app.use(express.json());
-app.use("/api",authRoutes);
+app.use("/api", authRoutes);
+app.use("/user", pokemonRoutes);
+app.use("/info", userRoutes)
 app.use(cookieParser());
 
-app.get('/set-cookies',(req,res) => {
-res.cookie('name', false);
-res.send("Check the cookies!");
-
+app.get('/set-cookies', (req, res) => {
+    res.cookie('name', false);
+    res.send("Check the cookies!");
 });
 
 app.get('/read-cookies', (req, res) => {

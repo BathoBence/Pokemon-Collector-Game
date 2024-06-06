@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import PokeCard from '../../PokeCard'
 import "./EncounterPage.css"

@@ -1,3 +1,4 @@
+import React from "react";
 import PokeCard from "./PokeCard";
 
 const Pack = ({pokemons}) => {

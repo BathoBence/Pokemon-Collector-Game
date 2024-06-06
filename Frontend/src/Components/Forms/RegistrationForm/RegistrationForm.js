@@ -1,3 +1,6 @@
+import React from "react";
+import "./RegistrationForm.css"
+
 const RegistrationForm = ({
     onRegister, errorMessage, username, setUsername, email, setEmail,
     password, setPassword, confirmPassword, setConfirmPassword }) => {
@@ -7,7 +10,7 @@ const RegistrationForm = ({
         <h2>Registration</h2>
         <form onSubmit={onRegister}>
             <div className="formField">
-                <label htmlFor="username">Username:</label>
+                <label htmlFor="username" className="fromLabel">Username:</label>
                 <input
                     type="text"
                     id="username"
@@ -17,7 +20,7 @@ const RegistrationForm = ({
                 />
             </div>
             <div className="formField">
-                <label htmlFor="email">Email:</label>
+                <label htmlFor="email" className="fromLabel">Email:</label>
                 <input
                     type="email"
                     id="email"
@@ -27,7 +30,7 @@ const RegistrationForm = ({
                 />
             </div>
             <div className="formField">
-                <label htmlFor="password">Password:</label>
+                <label htmlFor="password"  className="fromLabel">Password:</label>
                 <input
                     type="password"
                     id="password"
@@ -37,7 +40,7 @@ const RegistrationForm = ({
                 />
             </div>
             <div className="formField">
-                <label htmlFor="confirmPassword">Confirm Password:</label>
+                <label htmlFor="confirmPassword" className="fromLabel">Confirm Password:</label>
                 <input
                     type="password"
                     id="confirmPassword"

@@ -15,7 +15,12 @@ const caughtPokemonSchema = new Schema ({
         default: 1
     },
     form: String,
-    evolveInto: String
+    evolveInto: String,
+    trainerId: {
+        type: mongoose.Schema.Types.ObjectId, 
+        ref:"User",
+        required: true,
+    }
 });
 
 const caughtPokemon = model('CaughtPokemon', caughtPokemonSchema);

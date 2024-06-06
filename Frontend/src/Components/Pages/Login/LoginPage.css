@@ -17,6 +17,11 @@
 }
 */
 
+.logo {
+  height: 15vh;
+  width:auto;
+}
+
 .login {
     max-width: 400px;
     margin: auto;
@@ -29,7 +34,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(14, 179, 14, 0.7) ;
   }
+
+
+
+
+
+
+
+
   
   .login form {
     display: flex;

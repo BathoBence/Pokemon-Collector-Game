@@ -49,9 +49,14 @@ Open cardpacks to reveal new Pokémon companions and expand your collection. Wit
 Dive into the world of Pokémon like never before and experience the thrill of becoming a Pokémon master! Are you ready to catch 'em all?
 ## Tech Stack
 
-**Client:** React
+**Client:** 
+* <a href="https://react.dev/" target="blank"><img src="https://github.com/get-icon/geticon/blob/master/icons/react.svg" height="25" /> React </a>
+
+* <a href="https://www.javascript.com/" target="blank"><img src="https://github.com/get-icon/geticon/blob/master/icons/javascript.svg" height="25" /> JavaScript </a>
 
 **Server:** Node, Express
+
+* <a href="https://www.javascript.com/" target="blank"><img src="https://github.com/get-icon/geticon/blob/master/icons/javascript.svg" height="25" /> JavaScript </a>
 
 **Database:** MongoDB
 ## Installation

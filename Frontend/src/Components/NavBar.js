@@ -1,74 +1,45 @@
+import React from "react";
 import { useEffect, useState } from "react";
+import { Outlet, useParams, useNavigate } from "react-router-dom";
+import './NavBar.css'
 
-import Inventory from './Inventory.js'
-import Pokedex from './Pokedex.js'
-import Shop from './Shop.js'
-import Home from './Home.js'
-import EvolveCenter from './EvolveCenter.js'
+const NavBar = () => {
 
-function NavBar({page, eventHandlers, handleEncounter}){
+    const [name, setName] = useState(null);
+    const [gold, setGold] = useState(null);
+    const {userId} = useParams();
+    const navigate = useNavigate();
 
-    const [name, setName] = useState(null)
-    const [gold, setGold] = useState(null)
+    useEffect(() => {
 
-    useEffect(()=>{
-
-        async function getStat(){
-            const response = await fetch(`/api/player/Viki`)
+        async function getStat() {
+            // need and endpoint that return the user
+            const response = await fetch(`/info/user/${userId}`)
             const playerData = await response.json()
-            setName(playerData.name)
-            setGold(playerData.pokemonDollar)    
+            setName(playerData.username)
+            setGold(playerData.gold)
         }
         getStat()
 
-    },[])
+    }, [])
 
-
-    async function bought(value) {
-        const patchResponse = async() => await fetch('/api/player/money/minus',{
-            method:'PATCH',
-            headers: {'Content-type': 'application/json'},
-        })
-        patchResponse()
-
-        setTimeout(async () => {
-            
-            const getResponse = await fetch('/api/player/Viki')
-            const playerData = await getResponse.json()
-    
-            setGold(playerData.pokemonDollar)
-        }, 500);
-    }
-    function handleCallBack(url){
-        handleEncounter(url)
-    }
-
-    return(
+    return (
         <>
-            <div className="navBar">
-                <div className="navStats">
-                    <div className='navName'>{name}</div>
-                    <div className="navGold">{gold}G</div>
+            <div className="body_container">
+                <div className="navBar">
+                    <div className="navStats">
+                        <div className='navName'>{name}</div>
+                        <div className="navGold">{gold}G</div>
+                    </div>
+                    <div className="navButtons">
+                        <button className="navButton" onClick={()=> navigate(`/main/${userId}`)}>Home</button>
+                        <button className="navButton" onClick={()=> navigate(`/main/shop/${userId}`)}>Shop</button>
+                        <button className="navButton" onClick={()=> navigate(`/main/evolve/${userId}`)}>Evolve</button>
+                        <button className="navButton" onClick={()=> navigate(`/main/inventory/${userId}`)}>Inventory</button>
+                        <button className="navButton" onClick={()=> navigate(`/main/pokedex/${userId}`)}>Pokedex</button>
+                    </div>
                 </div>
-                <div className="navButtons">
-                    <button className="navButton" onClick={eventHandlers.homePageButton}>Home</button>
-                    <button className="navButton" onClick={eventHandlers.shopButton}>Shop</button>
-                    <button className="navButton" onClick={eventHandlers.evolveButton}>Evolve</button>
-                    <button className="navButton" onClick={eventHandlers.inventoryButton}>Inventory</button>
-                    <button className="navButton" onClick={eventHandlers.pokedexButton}>Pokedex</button>
-                </div>
-            </div>
-            <div className="screen">
-                {page === 'home' && <Home
-                    battleStartEvent={eventHandlers.battleButton}
-                    handleEncounter={handleCallBack}/>}
-                {page === 'shop' && <Shop
-                    eventHandler={bought}
-                    gold={gold}
-                    />}
-                {page === 'inventory' && <Inventory onSell={setGold}/>}
-                {page === 'pokedex' && <Pokedex/>}
-                {page === 'evolve' && <EvolveCenter onEvolve={eventHandlers.inventoryButton}/>}
+                <div className="content"><Outlet /></div>
             </div>
         </>
     )

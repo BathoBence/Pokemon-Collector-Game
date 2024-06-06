@@ -11,14 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/*
+.content{
+  width: 80%;
+  height: 100%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}*/
+
+.content{
+  max-width: 100vw;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
 
 .body_container{
+  width: 80vw;
   font-family: 'Press Start 2P';
   display: flex;
   flex-direction: row;
-  background-image: url(https://c4.wallpaperflare.com/wallpaper/850/680/974/pokemon-water-play-waterfall-wallpaper-preview.jpg);
+  background-image: url('./Images/background_img.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
+  background-position: center bottom;
+  position: fixed;
+  top: 0;
+}
+
+/*---------WelcomingPage------------------WelcomingPage------------------WelcomingPage------------------WelcomingPage------------------WelcomingPage---------*/
+
+.page_container {
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Press Start 2P';
+  display: flex;
+  flex-direction: row;
+  background-image: url(https://api.wallpapers.ai/static/downloads/936e9c70f93942ce84f572bfddafb240/upscaled/000000_981068920_kdpmpp2m15_PS7.5_Design_a_desktop_wallpaper_in_the_Pok_mon_art_style_a_serene_landscape_with_rolling_hills,_lush_foliage,_and_winding_paths._Captur_[upscaled].jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center bottom;
 }
 
 
